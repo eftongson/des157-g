@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-
+  var ellipseRadius = 60;
   //speed of drawing
   frameRate(250);
 
@@ -33,12 +33,12 @@ function draw() {
   if (mouseIsPressed==true) {
     noStroke();
     fill(random(150, 255), random(150, 255), random(200, 255), 150);
-    ellipse(mouseX, mouseY,60, 60);
+    ellipse(mouseX, mouseY,ellipseRadius,ellipseRadius);
   }
 
 
   //border around banner
-  stroke(255);
+  stroke('#000080');
   line(799, 799, 0, 799);
   line(799, 0, 799, 799);
   line(0, 249, 799, 249);

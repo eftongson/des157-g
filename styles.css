@@ -5,73 +5,92 @@
 body {
   max-width: 1366px;
   max-height: 768px;
-  padding: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 7vw;
   background-color: white;
   font-family: 'Roboto', sans-serif;
   color: grey;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: navy;
   font-weight: 100;
-}
-
-/*stack h1 title*/
-h1 {
   text-align: left;
 }
+
 
 h1 span {
   display: block;
 }
-}
 
 h2 {
-  font-size: 9px;
+  font-size: 1em;
   font-weight: 100;
-  color: grey;
-}
+  color: navy;
+  text-overflow: ellipsis;
+  /* make text vertical. Thanks https://davidwalsh.name/css-vertical-text  */
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transform-origin: 50% 150%;
+  float: left;
+  text-align: right;
 
-li {
-  font-style: italic;
-  font-size: 11px;
-  font-weight: 100;
-  color: #a39594;
+
 }
 
 /* GRID LAYOUT */
 .container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 2em;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 0px;
   grid-row-gap: 10px;
   grid-template-areas:
-    "header header header header"
-    "content1 content2 content3 content4"
-    "content1 content2 content3 content4"
+    "header1 header2 header3"
+    "content1 content2 content3"
   ;
-  align-items: start;
-  justify-items: start;
   word-wrap: normal;
 }
 
 /* GRID ASSIGMENTS */
 header {
-  grid-area: header;
+  grid-area: header1;
+  display: inline;
 }
 
+
 .column1 {
-  grid-area: content2;
+  grid-area: content1;
 }
 
 .column2 {
-  grid-area: content3;
+  grid-area: content2;
 }
 
 .column3 {
-  grid-area: content4;
+  grid-area: content3;
+}
+
+
+
+/* Bullet points */
+li {
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 100;
+  color: #a39594;
+  display: inline-block;
+  /* float: left; */
+  /* padding-right: 0; */
+  /* align-items: flex-end; */
+  text-align: right;
+  justify-self: end;
 }
 
 /* INTERACTIVE BANNER */
@@ -79,7 +98,9 @@ header {
   height: 250px;
   width: 800px;
   background-color: black;
-  box-shadow: 0px 0px 10px 0px grey;
+  position: relative;
+  margin: auto;
+  margin-top: 5vh;
 }
 
 /* FIXED FOOTER */
@@ -96,6 +117,6 @@ header {
   color: #a39594;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   /* CSS rule sets */
 }
