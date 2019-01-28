@@ -34,12 +34,9 @@ h1{
 form{
   padding: .2em;
 }
-.fieldblank {
-  text-align: right;
-}
 
-.submit {
-  text-align: center;
+label{
+  padding: 1em;
 }
 
 .output{
@@ -49,16 +46,20 @@ form{
   border-radius: 3em;
   position: absolute;
   margin: auto;
-  bottom: 30%;
+  bottom: 0;
+}
+
+.myMsg{
+  color:#242331;
 }
 
 footer{
   font-family: 'Roboto', sans-serif;
   font-size: .5em;
   color: #DB504A;
+  text-align: center;
   position: fixed;
   bottom: 0px;
-  text-align: center;
   margin: auto;
   padding: 2em;
 }
