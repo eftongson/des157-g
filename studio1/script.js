@@ -2,6 +2,8 @@
 
 'use strict';
 
+console.log('reading js');
+
 // listen for user to click Place Order
 document.querySelector('#submit').addEventListener('click',processForm);
 
