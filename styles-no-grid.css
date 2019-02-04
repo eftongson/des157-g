@@ -46,7 +46,7 @@ h2 {
   max-width: 800px;
   margin: auto;
   padding-top: 2em;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 0px;
@@ -55,11 +55,11 @@ h2 {
     "header1 header2 header3"
     "content1 content2 content3"
   ;
-  word-wrap: normal;
+  word-wrap: normal; */
 }
 
 /* GRID ASSIGMENTS */
-header {
+/* header {
   grid-area: header1;
   display: inline;
 }
@@ -75,7 +75,7 @@ header {
 
 .column3 {
   grid-area: content3;
-}
+} */
 
 
 
