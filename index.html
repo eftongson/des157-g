@@ -3,57 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Emilia Tongson</title>
+  <title>What's In Emilia's Bag?</title>
   <!--for mobile screens-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--normalize css-->
-  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet"/>
-  <link href="style.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Modak%7cRubik+Mono+One" rel="stylesheet">
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
   <!--link to p5.js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script> -->
 </head>
 
 <body>
-  <header class="header">
-    <h1>E M I L I A<span>T O N G S O N</span></h1>
-    <div id="mySketch">
-    </div>
-  </header>
-  <section class="container">
-<!--STUDIOS-->
-    <section class="column1">
-    <h2>STUDIOS</h2>
-    <ul>
-      <li><a href="https://eftongson.github.io/des157-g/studio1/index.html">Mad Libs</a></li>
-    </ul>
-      <ul>
-      <li><a href="https://eftongson.github.io/des157-g/studio2/index.html">Pocket Full of Interface</a></li>
-    </ul>
+  <container class="fabric">
+<!-- <img src="images/fabric" id="fabric" alt="fabric" style="width: 100vw; height:auto;"> -->
+</container>
+  <container class="bagBackground">
+    <img src="images/chapstick-01.png" id="chapstick" class="bagItem" alt="a tube of chapstick" style="width: 200px; height:auto;">
+    <img src="images/earphones-01.png" id="earphones" class="bagItem" alt="a tangled pair of earphones" style="width: 300px; height:auto;">
+    <img src="images/coughdrop-01.png" id="coughdrop" class="bagItem" alt="a cough drop candy" style="width: 100px; height:auto;">
+    <section "emiliasBag">
+      <h1>What's In Emilia's Bag?</h1>
     </section>
-<!--COMPARATIVE ANALYSIS-->
-    <section class="column2">
-    <h2>RESEARCH</h2>
-    <ul>
-      <li><a href="https://eftongson.github.io/des157-g/process/research/comparative.html">Comparative Analysis</a></li>
-    </ul>
-    </section>
-<!--TOPIC BRAINSTORM-->
-    <section class="column3">
-    <h2>DEVELOPMENT</h2>
-    <ul>
-      <li><a href="https://eftongson.github.io/des157-g/process/development/topic-brainstorm.html">Topic Brainstorm</a></li>
-    </ul>
-    </section>
-</section>
-
-  <section class="fixedfooter">
-    <p> <a href="mailto:&#101;&#102;&#116;&#111;&#110;&#103;&#115;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a> |
-       <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> |
-      <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
-  </section>
-
-<!--interactive banner script!-->
+  </container>
+  <footer>
+    <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> |
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></footer>
   <script src="script.js"></script>
 </body>
 

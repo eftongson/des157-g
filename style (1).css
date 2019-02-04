@@ -1,0 +1,112 @@
+body {
+  background-color: #B5D99C;
+  width: 1366px;
+  height: 768px;
+  margin: 10vh;
+}
+
+header {
+  background-color: #F5F7DC;
+  text-align: center;
+  width: 70vh;
+  padding: 1em;
+  border-color: #E3D7FF;
+  border-radius: 3em;
+  border-width: .3em;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 2.5rem;
+  color: #DB504A;
+}
+
+.machine {
+  height: 65vh;
+  width: 60vh;
+  background-color: #F5F7DC;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  color: #242331;
+  padding: 1.5em;
+}
+
+form {
+  padding: .2em;
+  border-color: inherit;
+}
+
+label {
+  padding: 1em;
+}
+
+fieldset>label {
+  text-align: right;
+  align-self: center;
+}
+
+fieldset {
+  color: grey;
+  padding: 1em;
+}
+
+input {
+  padding: .2em;
+  margin: .5em;
+}
+
+.buttons {
+  text-align: center;
+  font-weight: 200;
+  align-self: center;
+  border-color: white;
+  background-color: #B5D99C;
+  color: #242331;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+#submit {
+  background-color: #DB504A;
+  color: white;
+  margin: auto;
+}
+
+/* this is where the image drink comes out of */
+#drinkContainer {
+  height: 30vh;
+  width: 45vh;
+  background-color: #F5F7DC;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+
+.output {
+  height: 10vh;
+  width: 60vh;
+  background-color: #F5F7DC;
+  border-radius: 3em;
+  position: relative;
+  margin: auto;
+  bottom: 0;
+  z-index: 3;
+}
+
+.output .myMsg {
+  position: relative;
+  margin: auto;
+  color: #242331;
+}
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: .5em;
+  color: #DB504A;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  margin: auto;
+  padding: 2em;
+}
