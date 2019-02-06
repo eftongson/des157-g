@@ -3,35 +3,12 @@
   box-sizing: border-box;
 }
 
-body{
-width: 100%;
-height: 100%;
+body {
+  background: navy;
+  width: 100%;
+  height: 100%;
 }
 
-.fabric {
-  /* make a gradient in the text, not just #af9487 */
-  background:
-    linear-gradient(pink 0%, white 90%);
-  z-index: 1;
-}
-
-.bagBackground {
-  z-index: 1;
-  background-color: white;
-  margin-bottom: 0em;
-}
-
-/* why is this not working? Why does it only place the position via ID?? */
-.bagItems:hover {
-  cursor: pointer;
-  /* position: fixed;
-  bottom: 0; */
-}
-
-/* img{
-  display: flex;
-} */
-/* items overlaid behind text, "fall" to the bottom of screen */
 #chapstick {
   position: fixed;
   bottom: 0;
@@ -50,28 +27,22 @@ height: 100%;
   left: 27vw;
 }
 
-section {
-  width: 100vw;
-  height: 100vh;
+#overlay{
+  background-color: navy;
   position: absolute;
-  bottom: 0;
-  background-color: black;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 3rem;
-  mix-blend-mode: darken;
-  z-index: 3;
-  padding: 0;
-  margin: 0;
+  top: 10vh;
+  /* width: 80vw; */
+  height: 50vh;
+  display: none;
 }
 
+
 h1:hover {
-  cursor: cell;
+  cursor: pointer;
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   font-size: 15vh;
   line-height: 77%;
@@ -79,19 +50,12 @@ h1 {
   align-self: flex-end;
 }
 
-/* span{
-  margin: 0;
-  font-size: 5vh;
-  line-height: 77%;
-  display: inline;
-  align-self:baseline;
-} */
-
-/* this contains the h1 text */
-section .emiliasBag {
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
+/* how do I do this for specifically bagItems class? */
+img{
+  /* display: none; */
+}
+img:hover{
+  cursor: pointer;
 }
 
 footer {
@@ -111,15 +75,17 @@ footer a:hover {
   mix-blend-mode: darken;
 }
 
-h2{
+h2 {
   color: red;
   font-size: 1em;
 }
+
 /* media query for desktop */
 @media only screen and (min-width: 769px) {
   body {
     max-width: 1366px;
     max-height: 768px;
+    display: flex;
   }
 
   img {
