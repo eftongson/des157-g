@@ -28,13 +28,15 @@ body {
 }
 
 #overlay{
-  background-color: navy;
+  background-color: antiquewhite;
   position: absolute;
   top: 10vh;
   /* width: 80vw; */
   height: 50vh;
   display: none;
+  margin: 10%;
 }
+
 
 
 h1:hover {
@@ -43,6 +45,8 @@ h1:hover {
 
 h1 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
   margin: 0;
   font-size: 15vh;
   line-height: 77%;
@@ -86,9 +90,31 @@ h2 {
     max-width: 1366px;
     max-height: 768px;
     display: flex;
+    flex-direction: row;
   }
 
-  img {
-    display: inline;
+  section {
+    width: 50vw;
   }
+
+  section h1{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  section .section2{
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #overlay {
+    display: flex;
+    align-items: flex-end;
+    display: none;
+  }
+
+  /* img {
+    display: inline;
+  } */
 }
