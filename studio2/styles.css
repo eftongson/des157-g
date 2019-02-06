@@ -4,7 +4,7 @@
 }
 
 body {
-  background: navy;
+  background: antiquewhite;
   width: 100%;
   height: 100%;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 #overlay{
-  background-color: antiquewhite;
+  background-color: white;
   position: absolute;
   top: 10vh;
   /* width: 80vw; */
@@ -61,6 +61,16 @@ img{
 img:hover{
   cursor: pointer;
 }
+
+
+div#close:hover {
+  cursor: pointer;
+}
+
+div#close{
+
+}
+
 
 footer {
   background-color: black;

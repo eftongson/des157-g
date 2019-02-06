@@ -32,7 +32,7 @@ title.addEventListener('click', function() {
 })
 
 //call addEventListener method on each object so that it invokes function to close
-title.addEventListener('close', function() {
+close.addEventListener('click', function() {
   console.log('is close an event?');
   overlay.style.display = 'none';
 })
