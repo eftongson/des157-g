@@ -7,31 +7,50 @@
   <!--for mobile screens-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--normalize css-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900i" rel="stylesheet">
   <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-  <section  class="section1">
-    <h1 id="title">CLICK TO SEE WHAT'S IN EMILIA'S BAG.</h1>
-    <section id="overlay" class="description section2">
-      <!-- <img src="images/chapstick-01.png" id="chapstick" class="bagItem" alt="a tube of chapstick" width="50%" height="auto">
-      <img src="images/earphones-01.png" id="earphones" class="bagItem" alt="a tangled pair of earphones" width="50%" height="auto"> -->
-      <img src="images/coughdrop-01.png" id="coughDrop" alt="a cough drop candy" width="50%" height="auto">
-      <div id="close">&otimes;</div>
-      <!-- <h2><a href="../index.html">back to portal</a></h2> -->
+  <section class="section1">
+    <!-- <img src="images/earphones-01.png" id="earphones" class="bagItem" alt="a tangled pair of earphones" width="50%" height="auto"> -->
+    <!-- <img src="images/coughdrop-01.png" id="coughDrop" alt="a cough drop candy" width="50%" height="auto"> -->
+
+    <!-- <h2><a href="../index.html">back to portal</a></h2> -->
+    <h1 id="title">WHAT'S AT THE BOTTOM OF EMILIA'S BAG?</h1>
+    <!-- chapstick overlay -->
+    <section id="chapstickOverlay" class="description section2">
+      <div class="close">&otimes;</div>
+      <img src="images/chapstick-01.png" class="overlayItem" alt="a tube of chapstick" width="100">
+      <h2>Chapstick</h2>
+      <p>Moisturizer to avoid cracked and chapped lips. Usually mint- or fruit-flavored. Not of the Chapstick brand, but effective anyway.</p>
     </section>
+    <!-- earphones overlay -->
+    <section id="earphonesOverlay" class="description section2">
+      <div class="close2">&otimes;</div>
+      <img src="images/earphones-01.png" class="overlayItem" alt="a tangled pair of earphones" width="100">
+      <h2>Earphones</h2>
+      <p>A tool for listening and ignoring. Wired and connected. Can't live without them.</p>
+    </section>
+    <!-- coughdrop overlay -->
+    <section id="coughdropOverlay" class="description section2">
+      <div class="close3">&otimes;</div>
+      <img src="images/coughdrop-01.png" class="overlayItem" alt="a tube of chapstick" width="100">
+      <h2>Cough Drop</h2>
+      <p>Paper on the outside, sugar on the inside. Useful for sore throats. Tastes like citrus, honey, and mint.</p>
+    </section>
+
   </section>
 
-  <section id="backpack" class="itemContainer">
-<div id="xRay">
-
-    <img src="images/chapstick-01.png" id="chapstick" class="bagItem" alt="a tube of chapstick" width="50%" height="auto">
-    <img src="images/earphones-01.png" id="earphones" class="bagItem" alt="a tangled pair of earphones" width="50%" height="auto">
-    <img src="images/coughdrop-01.png" id="coughDrop" class="bagItem" alt="a cough drop candy" width="50%" height="auto">
-</div>
-    </section>
+  <section class="itemContainer">
+    <div id="xRay">
+      <img src="images/bag-01.png" id="backpack" alt="a backpack containing all the items" width="100">
+      <img src="images/chapstick-01.png" id="chapstick" class="bagItem" alt="a tube of chapstick" width="100">
+      <img src="images/earphones-01.png" id="earphones" class="bagItem" alt="a tangled pair of earphones" width="100">
+      <img src="images/coughdrop-01.png" id="coughdrop" class="bagItem" alt="a cough drop candy" width="100">
+    </div>
+  </section>
   <footer>
     <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> |
     <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></footer>
