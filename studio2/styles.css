@@ -37,11 +37,6 @@ img#backpack {
   padding: 1rem;
 }
 
-/* div #xRay{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-} */
 .itemContainer section {
   height: 50vh;
   width: 50vh;
@@ -51,15 +46,10 @@ img#backpack {
   right: 0;
   margin: 0;
   padding: 0
-    /* display: grid;
-  align-items: end;
-  align-content: end;
-grid-template-columns: repeat(3,1fr);
-grid-template-rows: repeat(3,1fr); */
 }
 
 img#earphones {
-  width: 36vh;
+  width: 25vh;
   height: auto;
   position: fixed;
   bottom: 1em;
@@ -102,8 +92,8 @@ section.description {
   z-index: 4;
   border-radius: 1em;
   box-shadow: 0px 0px 35px black;
-  padding: 5rem;
-transition: display 0.5s ease-out;
+  padding: 2rem;
+  transition: display 0.5s ease-out;
 }
 
 #chapstickOverlay img {
@@ -217,30 +207,42 @@ p {
     height: 50vh;
   }
 
-  section.description{
+  section.description {
+    background-color: #4a6f88;
+    position: relative;
+    top: 10vh;
+    width: 80vw;
+    height: 50vh;
     display: none;
-  position: absolute;
-    padding: 5vw;
-      margin: auto;
-    align-items: center;
-    align-self: center;
-    
-
-
+    /* margin: 10%; */
+    z-index: 4;
+    border-radius: 1em;
+    box-shadow: 0px 0px 35px black;
+    padding: 5rem;
+    transition: background-color 0.5s ease-out;
   }
+
   #chapstickOverlay img {
     position: relative;
     width: 80%;
   }
+
   #coughdropOverlay img {
     position: relative;
     height: 20%;
     width: 20%;
   }
+
   #earphonesOverlay img {
     position: relative;
-    width: 80%;
+    align-items: center;
+    align-self: center;
+    height: 40vh;
   }
+ img.overlayItem{
+   position: relative;
+   height: 25%;
+ }
 
   footer {
     background-color: antiquewhite;
@@ -261,8 +263,4 @@ p {
   footer a:hover {
     color: orange;
   }
-
-  /* img {
-    display: inline;
-  } */
 }
