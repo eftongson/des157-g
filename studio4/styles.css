@@ -1,0 +1,62 @@
+section#container{
+background-color: #F4FFFF;
+height: 100vh;
+width: 100%;
+text-align: center;
+}
+header{
+  background-color: red;
+  margin: 0;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  line-height: .3;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* Emilia Tongson */
+h1{
+  font-family: "Walter Turncoat", cursive;
+  font-size: 3.5rem;
+  margin-top: 20%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* description */
+p.definition{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  /* position: absolute; */
+  bottom: 15vh;
+}
+/* Hello */
+h2{
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+}
+/* My name is */
+h3{
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+section#definition{
+  padding: 5%;
+}
+
+footer{
+  font-family: "Roboto", sans-serif;
+  background-color: red;
+  font-size: .7rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
