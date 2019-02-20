@@ -1,16 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 5%;
+  height: 100vh;
+  width: 100vw;
+  overflow: visible;
+  background-color: white;
+}
+
 section#container{
 background-color: #F4FFFF;
-height: 100vh;
 width: 100%;
+height:100%;
 text-align: center;
+border-radius: 25px;
+box-shadow: 0px 0px 15px darkgrey;
+position: relative;
+
 }
 header{
-  background-color: red;
+  background-color: #FF6442;
   margin: 0;
   padding: 1rem;
   color: white;
   text-align: center;
-  line-height: .3;
+  line-height: .2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -18,19 +35,37 @@ header{
 /* Emilia Tongson */
 h1{
   font-family: "Walter Turncoat", cursive;
-  font-size: 3.5rem;
-  margin-top: 20%;
+  font-size: 2.5rem;
+  margin:0;
+  padding: 0;
+  line-height: 1;
+  color: #555555;
   /* display: flex;
   flex-direction: column; */
 }
 
+section#name{
+  line-height: 0;
+  margin-top: 10%;
+}
+
+#franchette{
+  display: none;
+}
+#valera {
+  display: none;
+}
 /* description */
 p.definition{
   font-family: "Roboto", sans-serif;
+  color: #333333;
   font-weight: 100;
-  font-size: 1rem;
-  /* position: absolute; */
-  bottom: 15vh;
+  font-size: .8rem;
+  position: absolute;
+  bottom: 15%;
+  padding: 5%;
+  text-align: left;
+  line-height: 1.2;
 }
 /* Hello */
 h2{
@@ -40,6 +75,7 @@ h2{
 /* My name is */
 h3{
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-size: 1em;
 }
 
@@ -49,14 +85,30 @@ section#definition{
 
 footer{
   font-family: "Roboto", sans-serif;
-  background-color: red;
+  background-color: #FF6442;
+  font-weight: 100;
+  color: white;
   font-size: .7rem;
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  left: 0;
+  /* display: flex;
+ align-content:flex-end; */
   width: 100%;
   height: auto;
   margin: auto;
+  padding: .5rem;
   text-align: center;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+a:visited{
+  color:white;
+}
+/* media query for desktop */
+@media only screen and (min-width: 769px){
+section#name{
+  margin-top: 5%;
+}
 }
