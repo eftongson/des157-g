@@ -118,6 +118,9 @@ li {
   color: #a39594;
 }
 
+section.container{
+  padding: 5%;
+}
 section .fixedfooter{
   background-color: white;
 }
