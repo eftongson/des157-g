@@ -34,7 +34,23 @@ section#mobileView {
   margin: auto;
 }
 
-nav {
+h2{
+  font-size: 1rem;
+}
+
+section#feed{
+  background-color: white;
+}
+div.feedPost{
+  border-style: solid;
+  border-color:black;
+  border-width: 1px;
+  width: 375px;
+  height: 375px;
+  background-color: white;
+}
+
+nav {background-color: white;
   position: fixed;
   top: 600px;
   display: flex;
