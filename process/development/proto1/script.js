@@ -11,7 +11,7 @@ console.log('feed me');
 console.log('reading js');
 
 var capture;
-var capture2;
+
 var imageXY = 400;
 
 function setup() {
@@ -23,12 +23,12 @@ function setup() {
   capture.size(imageXY, imageXY);
   capture.hide(); // remove comment to hide video
 
-  createCanvas(imageXY, imageXY);
-  // create video capture
-  capture2 = createCapture(VIDEO);
-  // video capture size
-  capture2.size(imageXY, imageXY);
-  capture2.hide(); // remove comment to hide video
+  // createCanvas(imageXY, imageXY);
+  //
+  // capture2 = createCapture(VIDEO);
+  //
+  // capture2.size(imageXY, imageXY);
+  // capture2.hide();
 }
 
 function draw() {
