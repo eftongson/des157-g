@@ -1,0 +1,90 @@
+body {
+  border-color: grey;
+  border-radius: 1vmin;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 375px;
+  margin: auto;
+  padding-top: 1.5vmin;padding-bottom: 1.5vmin;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  text-align: center;
+  z-index: 3;
+}
+
+h1{
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+section#mobileView {
+  width: 375px;
+  height: 667px;
+  background-color: white;
+  margin: auto;
+}
+
+h2{
+  font-size: 1rem;
+}
+
+section#feed{
+  background-color: white;
+}
+
+/* RUNNING FEED*/
+div.post{
+  display: block;
+}
+
+div#myPost1{
+  position: fixed;
+  top: 0;
+}
+
+div#myPost2{
+  position: fixed;
+  bottom: 0;
+
+}
+
+
+div.feedPost{
+  border-style: solid;
+  border-color:black;
+  border-width: 1px;
+  width: 375px;
+  height: 375px;
+  background-color: white;
+}
+
+nav {background-color: white;
+  position: fixed;
+  top: 600px;
+  display: flex;
+  flex-direction: row;
+  width: 375px;
+  margin: auto;
+  padding-top: 2vmin;padding-bottom: 2vmin;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  z-index: 3;
+}
+
+div.navIcon {
+  margin: auto;
+  justify-content: space-around;
+  border-color: grey;
+}
