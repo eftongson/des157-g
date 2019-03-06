@@ -5,10 +5,6 @@ console.log('feed me');
 /* Captures the video camera and adds a filter
    Run local sever to see in Firefox
    */
-'use strict';
-
-// send a message to the console
-console.log('reading js');
 
 var capture;
 
