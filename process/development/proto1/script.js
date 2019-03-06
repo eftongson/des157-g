@@ -8,7 +8,7 @@ console.log('feed me');
 
 var capture;
 
-var imageXY = 400;
+var imageXY = 375;
 
 function setup() {
 
@@ -19,12 +19,6 @@ function setup() {
   capture.size(imageXY, imageXY);
   capture.hide(); // remove comment to hide video
 
-  // createCanvas(imageXY, imageXY);
-  //
-  // capture2 = createCapture(VIDEO);
-  //
-  // capture2.size(imageXY, imageXY);
-  // capture2.hide();
 }
 
 function draw() {
@@ -33,8 +27,4 @@ function draw() {
   filter('INVERT');// change filters: THRESHOLD, GRAY, OPAQUE, INVERT, POSTERIZE, BLUR, ERODE, DILATE or BLUR.
   capture.parent('myPost1');
 
-  // background(255);
-  // image(capture2, 0, 0, 640, 480);
-  // filter('BLUR', 7);
-  // capture2.parent('myPost2');
 }
