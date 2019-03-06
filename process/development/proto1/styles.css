@@ -27,7 +27,7 @@ h1{
   margin: auto;
 }
 
-section#mobileView {
+section#container {
   width: 375px;
   height: 667px;
   background-color: white;
@@ -43,7 +43,7 @@ section#feed{
 }
 
 /* RUNNING FEED*/
-div.post{
+div.feedPost{
   display: block;
 }
 
