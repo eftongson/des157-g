@@ -101,3 +101,14 @@ div.navIcon {
   justify-content: space-around;
   border-color: grey;
 }
+
+footer{
+  position: fixed;
+  bottom: 50px;
+  background-color: white;
+  opacity: .5;
+  color: black;
+  z-index: 3;
+  width: 100%;
+
+}
