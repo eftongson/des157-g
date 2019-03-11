@@ -5,7 +5,7 @@ body {
   font-family: sans-serif;
 }
 
-header{
+header {
   background-color: white;
   position: fixed;
   top: 0;
@@ -13,17 +13,19 @@ header{
   flex-direction: row;
   width: 375px;
   margin: auto;
-  padding-top: 1.7vmax;
-  padding-bottom: 1.7vmax;
+  padding-top: 1.9vmax;
+  padding-bottom: 1.9vmax;
   color: black;
-  border-style: solid;
+  /* border-style: solid;
   border-color: black;
-  border-width: 1px;
+  border-width: 1px; */
   text-align: center;
+  box-shadow: 0px 0px 30px grey;
+  background-blend-mode: multiply;
   z-index: 3;
 }
 
-h1{
+h1 {
   font-size: 1rem;
   text-align: center;
   margin: auto;
@@ -36,56 +38,42 @@ section#container {
   /* margin: auto; */
 }
 
-h2{
+h2 {
   font-size: 1rem;
   padding-left: 1.5vmax;
 }
 
-p{
+p {
   font-size: 2vmax;
   padding-left: 1.5vmax;
 }
-section#feed{
-  background-color: white;
-}
 
-section.feedPost{
-padding-top: 4vmax;
-  background-color: white;
-}
-
-/* RUNNING FEED*/
-/* div.feedPost{
-  display: block;
-} */
-
-#myPost1{
-  position: absolute;
-  width:375px;
-  height:375px;
+section#feed {
+  position: relative;
   background-color: blue;
-  margin: auto;
-
-
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  color: green;
 }
 
-div#myPost2{
-  /* position: fixed;
-  bottom: 0; */
-
+.feedPost {
+  padding-top: 4vmax;
+  z-index: 1;
+  color: green;
 }
 
-
-div.post{
+div.post {
   /* border-style: solid;
   border-color:black;
   border-width: 1px; */
   width: 375px;
   height: 375px;
-/* background-color: lightgrey; */
+  /* background-color: lightgrey; */
 }
 
-nav {background-color: white;
+nav {
+  background-color: white;
   position: fixed;
   bottom: 0;
   display: flex;
@@ -95,9 +83,10 @@ nav {background-color: white;
   padding-top: 1.7vmax;
   padding-bottom: 1.7vmax;
   color: black;
-  border-style: solid;
+  /* border-style: solid;
   border-color: black;
-  border-width: 1px;
+  border-width: 1px; */
+  box-shadow: 0px 0px 30px grey;
   z-index: 3;
 }
 
@@ -107,7 +96,7 @@ div.navIcon {
   border-color: grey;
 }
 
-footer{
+footer {
   position: fixed;
   bottom: 50px;
   background-color: white;
@@ -115,5 +104,4 @@ footer{
   color: black;
   z-index: 4;
   width: 100%;
-
 }
