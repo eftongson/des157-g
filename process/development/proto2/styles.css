@@ -57,7 +57,14 @@ section#feed {
   color: green;
 }
 
+section#feedOverlay {
+  z-index: 2;
+  color: black;
+}
+
 .feedPost {
+  position: relative;
+  top: 900px;
   padding-top: 4vmax;
   z-index: 1;
   color: #00ff00;
