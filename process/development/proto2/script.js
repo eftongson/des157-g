@@ -43,7 +43,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(0,0,0,0);
   image(capture1, 0, 4800, 640, 480);
   filter('DILATE');
 
