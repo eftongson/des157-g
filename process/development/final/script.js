@@ -1,6 +1,6 @@
 'use strict';
 
-// alert("This interface is best and should only be viewed on mobile.");
+alert("This interface should only be viewed on mobile.");
 
 console.log('reading js. feed me');
 
@@ -10,8 +10,8 @@ console.log('reading js. feed me');
 
 var capture1;
 var capture2;
-var imageXY = 375;
-var yousernameHeight = 32;
+var imageXY;
+var yousernameHeight;
 // let fps = frameRate();
 
 // use responsive for dimensions
@@ -26,7 +26,8 @@ window.addEventListener('resize', function() {
 
 
 function setup() {
-
+  imageXY = 375;
+  yousernameHeight = 32;
   var feed = createCanvas(imageXY, intViewportHeight * 8);
   // create video capture
   capture1 = createCapture(VIDEO);
@@ -74,23 +75,3 @@ function draw() {
 
 
 }
-
-// console.log("fps: " + frameRate());
-
-// BLOTTER - Example 1
-// var text = new Blotter.Text("InztanGrat", {
-//   family : "'EB Garamond', sans-serif",
-//   size : 27,
-//   fill : "#202020"
-// });
-//
-// var material = new Blotter.Material();
-//
-// var blotter = new Blotter(material, {
-//   texts : text
-// });
-//
-// var elem = document.getElementById("plain-text");
-// var scope = blotter.forText(text);
-//
-// scope.appendTo(elem);
