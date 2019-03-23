@@ -101,6 +101,7 @@ div.navIcon {
   margin: auto;
   justify-content: space-around;
   border-color: grey;
+  cursor: pointer;
 }
 
 footer {
