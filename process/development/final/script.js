@@ -11,26 +11,33 @@ console.log('feed me');
 var capture1;
 var capture2;
 var imageXY = 375;
+var yousernameHeight = 32;
+// let fps = frameRate();
 
 // use responsive for dimensions
 var intViewportHeight = window.innerHeight;
 console.log('intViewportHeight: ' + intViewportHeight);
 
 // listens for different responsive dimensions
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function() {
   intViewportHeight = window.innerHeight;
   console.log('intViewportHeight: ' + intViewportHeight);
 })
 
 
 function setup() {
-  var feed = createCanvas(imageXY, intViewportHeight*7);
+
+  var feed = createCanvas(imageXY, intViewportHeight * 8);
   // create video capture
   capture1 = createCapture(VIDEO);
   // video capture size
   capture1.size(imageXY, imageXY);
   capture1.hide(); // remove comment to hide video
+  // parent it to section id in html
   feed.parent('feed');
+  frameRate(15);
+  background(0, 0, 0, 0);
+  // frameRate(15);
 
   // var myPost2 = createCanvas(imageXY, imageXY);
 
@@ -43,29 +50,32 @@ function setup() {
 }
 
 function draw() {
-  background(0,0,0,0);
-  image(capture1, 0, 4800, 640, 480);
+
+  image(capture1, 0, 4800 + yousernameHeight, 640, 480);
   filter('DILATE');
 
-  image(capture1, 0, 4000, 640, 480);
+  image(capture1, 0, 4000 + yousernameHeight, 640, 480);
   filter('DILATE');
 
-  image(capture1, 0, 3200, 640, 480);
+  image(capture1, 0, 3200 + yousernameHeight, 640, 480);
   filter('DILATE');
 
-  image(capture1, 0, 2400, 640, 480);
+  image(capture1, 0, 2400 + yousernameHeight, 640, 480);
   filter('DILATE');
 
-  image(capture1, 0, 1600, 640, 480);
+  image(capture1, 0, 1600 + yousernameHeight, 640, 480);
   filter('DILATE'); // change filters: THRESHOLD, GRAY, OPAQUE, INVERT, POSTERIZE, BLUR, ERODE, DILATE or BLUR.
 
-  image(capture1, 0, 800, 640, 480);
+  image(capture1, 0, 800 + yousernameHeight, 640, 480);
   filter('DILATE');
 
-  image(capture1, 0, 0, 640, 480);
+  image(capture1, 0, 0 + yousernameHeight, 640, 480);
   filter('ERODE');
+
+
 }
 
+// console.log("fps: " + frameRate());
 
 // BLOTTER - Example 1
 // var text = new Blotter.Text("InztanGrat", {
