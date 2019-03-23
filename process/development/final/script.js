@@ -2,7 +2,7 @@
 
 // alert("This interface is best and should only be viewed on mobile.");
 
-console.log('feed me');
+console.log('reading js. feed me');
 
 /* Captures the video camera and adds a filter
    Run local sever to see in Firefox
